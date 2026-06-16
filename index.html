@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fabulous Freight India Pvt. Ltd. — A leading enabler of global trade. Premium air freight, ocean freight, road transportation, warehousing, customs clearance, and break-bulk shipments." />
+  <meta name="theme-color" content="#C8790A" />
+  <title>Fabulous Freight India — A Leading Enabler of Global Trade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================
+     CUSTOM CURSOR
+============================= -->
+<div id="cursor-outer" class="cursor-outer"></div>
+<div id="cursor-inner" class="cursor-inner"></div>
+
+<!-- ============================
+     FLOATING NAVIGATION
+============================= -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-pill">
+    <a href="#home" class="nav-logo" id="nav-logo-link" aria-label="Fabulous Freight Home">
+      <img src="logo.png" alt="Fabulous Freight India Pvt. Ltd." class="nav-logo-img" />
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link" id="nav-home">Home</a>
+      <a href="#about" class="nav-link" id="nav-about">About</a>
+      <a href="#services" class="nav-link" id="nav-services">Services</a>
+      <a href="#network" class="nav-link" id="nav-network">Network</a>
+      <a href="#gallery" class="nav-link" id="nav-gallery">Gallery</a>
+      <a href="#news" class="nav-link" id="nav-news">News</a>
+    </div>
+    <a href="#contact" class="nav-cta" id="nav-quote">Request Quote</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-inner">
+    <a href="#home" class="mobile-nav-link" id="mob-home">Home</a>
+    <a href="#about" class="mobile-nav-link" id="mob-about">About</a>
+    <a href="#services" class="mobile-nav-link" id="mob-services">Services</a>
+    <a href="#network" class="mobile-nav-link" id="mob-network">Network</a>
+    <a href="#gallery" class="mobile-nav-link" id="mob-gallery">Gallery</a>
+    <a href="#news" class="mobile-nav-link" id="mob-news">News</a>
+    <a href="#contact" class="mobile-nav-link mobile-cta" id="mob-quote">Request Quote</a>
+  </div>
+</div>
+
+<!-- ============================
+     HERO SECTION
+============================= -->
+<section id="home" class="hero" aria-label="Hero section">
+  <div class="hero-bg">
+    <img src="hero_v3.png" alt="Cinematic aerial view of container port at golden hour" class="hero-bg-img" />
+    <div class="hero-bg-overlay"></div>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-label reveal-up">
+      <span class="label-line"></span>
+      <span>New Delhi, India · Est. 2014</span>
+    </div>
+
+    <h1 class="hero-headline reveal-up delay-1">
+      <span class="hero-word">Global</span>
+      <span class="hero-word hero-word--italic">Trade</span>
+      <br />
+      <span class="hero-word hero-word--outline">Without</span>
+      <span class="hero-word">Compromise</span>
+    </h1>
+
+    <p class="hero-subline reveal-up delay-2">
+      Our logistic specialists handle the transport, warehousing and delivery of products — assuring satisfactory receiving at every destination across the globe.
+    </p>
+
+    <div class="hero-actions reveal-up delay-3">
+      <a href="#services" class="btn-primary" id="hero-explore">Explore Services</a>
+      <a href="#contact" class="btn-ghost" id="hero-quote">Request a Quote</a>
+    </div>
+
+    <div class="hero-stats reveal-up delay-4">
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-number" id="stat-countries" data-target="50">50</span><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-number" id="stat-years" data-target="10">10</span><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-label">Years</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num-row">
+          <span class="stat-number" id="stat-clients" data-target="500">500</span><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-label">Clients</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============================
+     TICKER / MARQUEE
+============================= -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-content">
+      <span>Air Freight</span><span class="marquee-dot">◆</span>
+      <span>Ocean Freight</span><span class="marquee-dot">◆</span>
+      <span>Road Transportation</span><span class="marquee-dot">◆</span>
+      <span>Warehousing</span><span class="marquee-dot">◆</span>
+      <span>Customs Clearance</span><span class="marquee-dot">◆</span>
+      <span>Break Bulk Shipments</span><span class="marquee-dot">◆</span>
+      <span>Air Freight</span><span class="marquee-dot">◆</span>
+      <span>Ocean Freight</span><span class="marquee-dot">◆</span>
+      <span>Road Transportation</span><span class="marquee-dot">◆</span>
+      <span>Warehousing</span><span class="marquee-dot">◆</span>
+      <span>Customs Clearance</span><span class="marquee-dot">◆</span>
+      <span>Break Bulk Shipments</span><span class="marquee-dot">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+     ABOUT SECTION
+============================= -->
+<section id="about" class="about" aria-label="About Fabulous Freight">
+  <canvas class="section-particles" aria-hidden="true"></canvas>
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="section-label reveal-fade">Our Story</div>
+      <h2 class="about-headline reveal-up">
+        A Vital Link<br />
+        <em>In Your Business</em>
+      </h2>
+
+      <div class="about-body reveal-fade">
+        <p>
+          Fabulous Freight India Pvt. Ltd. is a team of skilled and dedicated professionals providing our customers with comprehensive supply chain management on a global platform through air and ocean transport.
+        </p>
+        <p>
+          We believe in successfully carrying out our role as a vital link in your business by offering the perfect teamwork of our international and domestic teams — multiplying efficiency with skilled professionals in key locations across the globe.
+        </p>
+        <p>
+          Our company's business model revolves entirely around the customer's requirements. We believe in providing a complete solution for the client's need with our cost-effective, time-efficient services.
+        </p>
+      </div>
+
+      <div class="about-values reveal-fade">
+        <div class="value-pill">Precision</div>
+        <div class="value-pill">Trust</div>
+        <div class="value-pill">Scale</div>
+        <div class="value-pill">Excellence</div>
+      </div>
+    </div>
+
+    <div class="about-right reveal-fade">
+      <div class="about-visual">
+        <div class="about-img-frame">
+          <img src="hero_containers.png" alt="Container port operations" class="about-img" />
+          <div class="about-img-caption">
+            <span class="caption-num">10+</span>
+            <span class="caption-text">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-card-float" id="wca-badge">
+          <div class="wca-glow"></div>
+          <img src="wca_logo.jpg" alt="WCA World" class="wca-logo-img" />
+          <div class="float-card-text">
+            <strong>Member Since 2014</strong>
+            <span>Global Network Partner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     SERVICES SECTION
+============================= -->
+<section id="services" class="services" aria-label="Our Services">
+  <canvas class="section-particles" aria-hidden="true"></canvas>
+  <div class="services-header">
+    <div class="section-label reveal-fade">What We Do</div>
+    <h2 class="services-headline reveal-up">
+      Complete <em>Logistics</em><br />Solutions
+    </h2>
+    <p class="services-subline reveal-fade">Every shipment is a commitment. Every route is crafted with precision.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- Air Freight -->
+    <article class="service-card service-card--featured" id="service-air" aria-label="Air Freight service">
+      <div class="service-card-bg">
+        <img src="air_freight.png" alt="Cargo aircraft at sunset" />
+        <div class="service-card-overlay"></div>
+      </div>
+      <div class="service-card-content">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Air Freight</h3>
+        <p class="service-desc">We provide an integrated network of air transport options giving you the widest range of air cargo choices — all without making multiple calls to find the best rates.</p>
+        <div class="service-features">
+          <span>Express Delivery</span>
+          <span>Charter Services</span>
+          <span>Dangerous Goods</span>
+        </div>
+        <a href="#contact" class="service-link" id="service-air-link">Enquire Now <span>→</span></a>
+      </div>
+    </article>
+
+    <!-- Ocean Freight -->
+    <article class="service-card" id="service-ocean" aria-label="Ocean Freight service">
+      <div class="service-card-bg">
+        <img src="ocean_freight.png" alt="Container ship at sea" />
+        <div class="service-card-overlay"></div>
+      </div>
+      <div class="service-card-content">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Ocean Freight</h3>
+        <p class="service-desc">Best-in-class ocean services and a vast network of shipping routes. We combine local expertise with our wide intermodal network for an efficient, straightforward experience.</p>
+        <div class="service-features">
+          <span>FCL &amp; LCL</span>
+          <span>Consolidation</span>
+          <span>Reefer</span>
+        </div>
+        <a href="#contact" class="service-link" id="service-ocean-link">Enquire Now <span>→</span></a>
+      </div>
+    </article>
+
+    <!-- Road Transportation -->
+    <article class="service-card" id="service-road" aria-label="Road Transportation service">
+      <div class="service-card-bg">
+        <img src="road_transport.png" alt="Freight trucks at twilight" />
+        <div class="service-card-overlay"></div>
+      </div>
+      <div class="service-card-content">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Road Transportation</h3>
+        <p class="service-desc">A cost-effective, secure, timely and efficient solution for all road freight shipments — to and from any point in the country.</p>
+        <div class="service-features">
+          <span>FTL &amp; LTL</span>
+          <span>Pan-India</span>
+          <span>Tracking</span>
+        </div>
+        <a href="#contact" class="service-link" id="service-road-link">Enquire Now <span>→</span></a>
+      </div>
+    </article>
+
+
+    <!-- Customs Clearance -->
+    <article class="service-card" id="service-customs" aria-label="Customs Clearance service">
+      <div class="service-card-bg">
+        <img src="customs.png" alt="Customs clearance documents" />
+        <div class="service-card-overlay"></div>
+      </div>
+      <div class="service-card-content">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Customs Clearance</h3>
+        <p class="service-desc">We handle everything from preparing to submission of proper documentation — weight, packing, and all information required to facilitate import and export of goods.</p>
+        <div class="service-features">
+          <span>Documentation</span>
+          <span>Import &amp; Export</span>
+          <span>Compliance</span>
+        </div>
+        <a href="#contact" class="service-link" id="service-customs-link">Enquire Now <span>→</span></a>
+      </div>
+    </article>
+
+    <!-- Break Bulk -->
+    <article class="service-card service-card--dark" id="service-breakbulk" aria-label="Break Bulk Shipments service">
+      <div class="service-card-bg">
+        <img src="break_bulk.png" alt="Break Bulk Shipments" class="service-card-img" loading="lazy" />
+        <div class="service-card-overlay"></div>
+      </div>
+      <div class="service-card-content service-card-content--text">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Break Bulk<br />Shipments</h3>
+        <p class="service-desc">Shipping oversized or overweight items presents unique challenges. We offer best break-bulk shipping to reduce time spent in disintegrating and re-constructing items during loading and unloading.</p>
+        <div class="service-features">
+          <span>Oversized Cargo</span>
+          <span>Project Cargo</span>
+          <span>Heavy Lift</span>
+        </div>
+        <a href="#contact" class="service-link service-link--amber" id="service-breakbulk-link">Enquire Now <span>→</span></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================
+     GLOBAL NETWORK
+============================= -->
+<section id="network" class="network" aria-label="Global Network">
+  <canvas class="section-particles" aria-hidden="true"></canvas>
+  <div class="network-inner">
+    <div class="network-header">
+      <div class="section-label reveal-fade">Our Reach</div>
+      <h2 class="network-headline reveal-up">
+        Moving The World<br />
+        <em>One Route at a Time</em>
+      </h2>
+    </div>
+
+    <!-- SVG WORLD MAP WITH PORTS -->
+    <div class="world-map-wrapper reveal-fade">
+      <div class="world-map-stats">
+        <div class="wm-stat">
+          <span class="wm-stat-num">50+</span>
+          <span class="wm-stat-label">Countries Served</span>
+        </div>
+        <div class="wm-stat">
+          <span class="wm-stat-num">24/7</span>
+          <span class="wm-stat-label">Operations</span>
+        </div>
+        <div class="wm-stat">
+          <span class="wm-stat-num">5</span>
+          <span class="wm-stat-label">Service Modes</span>
+        </div>
+      </div>
+      <div class="world-map-container" id="globe-container">
+        <canvas id="globe-canvas" aria-label="Interactive world trade globe"></canvas>
+        <div class="globe-markers" id="globe-markers"></div>
+      </div>
+    </div>
+
+    <p class="network-body reveal-fade">
+      With our worldwide procurement network, we have global coverage of chain supply logistics services — providing substantial time and cost-efficient benefits. The multimodal supply chain is emphasised to reduce transit time and increase reach for remote areas.
+    </p>
+
+    <div class="network-members reveal-fade">
+      <span class="member-badge">Member of WCA World</span>
+      <span class="member-badge">FIATA Member</span>
+      <span class="member-badge">IATA Accredited</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     GALLERY SECTION
+============================= -->
+<section id="gallery" class="gallery" aria-label="Gallery">
+  <div class="gallery-header">
+    <div class="section-label reveal-fade">Our Operations</div>
+    <h2 class="gallery-headline reveal-up">
+      The World We <em>Move</em>
+    </h2>
+    <p class="gallery-subline reveal-fade">A glimpse into the scale, precision, and global reach of Fabulous Freight India. Company team photos coming soon.</p>
+  </div>
+
+  <div class="gallery-mosaic">
+    <div class="gallery-item gallery-item--tall" id="gal-1">
+      <img src="air_freight.png" alt="Cargo aircraft at sunset" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span>Air Operations</span>
+      </div>
+    </div>
+    <div class="gallery-item" id="gal-2">
+      <img src="ocean_freight.png" alt="Container ship at sea" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span>Ocean Voyages</span>
+      </div>
+    </div>
+    <div class="gallery-item" id="gal-3">
+      <img src="road_transport.png" alt="Freight trucks at twilight" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span>Road Network</span>
+      </div>
+    </div>
+    <div class="gallery-item gallery-item--wide" id="gal-4">
+      <img src="hero_cinematic.png" alt="Container port aerial view" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span>Port Operations</span>
+      </div>
+    </div>
+    <div class="gallery-item" id="gal-5">
+      <img src="customs.png" alt="Customs documents" loading="lazy" />
+      <div class="gallery-item-overlay">
+        <span>Customs Mastery</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     TESTIMONIAL
+============================= -->
+<section class="testimonial" aria-label="Client testimonial">
+  <div class="testimonial-inner">
+    <div class="testimonial-quote-mark">"</div>
+    <blockquote class="testimonial-text reveal-up">
+      Fabulous Freight Pvt Ltd. is a part of our carrier fleet service requirement from the earliest time of our company. We are always impressed by their commitment to providing 100% customer satisfaction.
+    </blockquote>
+    <div class="testimonial-author reveal-fade">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-name">Clara Seinfield</div>
+      <div class="testimonial-role">Valued Client</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     NEWS SECTION
+============================= -->
+<section id="news" class="news" aria-label="Latest News">
+  <div class="news-inner">
+    <div class="news-header">
+      <div class="section-label reveal-fade">Industry Insights</div>
+      <h2 class="news-headline reveal-up">Latest <em>News</em></h2>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card news-card--featured" id="news-1">
+        <div class="news-card-img">
+          <img src="ocean_freight.png" alt="Freight forwarding news" loading="lazy" />
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">Industry Update</div>
+          <h3 class="news-title">Freight Forwarder vs Customs Broker: What's the Difference?</h3>
+          <p class="news-excerpt">One of the basic mistakes people generally make when they are beginners in this field is confusing a freight forwarder with a customs broker. Here's everything you need to know.</p>
+          <a href="https://fabulousfreight.in/freight-forwarder-vs-customs-broker-whats-the-difference/" class="news-read" id="news-1-link" target="_blank" rel="noopener noreferrer">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="news-card" id="news-2">
+        <div class="news-card-img">
+          <img src="road_transport.png" alt="Supply chain news" loading="lazy" />
+        </div>
+        <div class="news-card-body">
+          <div class="news-date">Supply Chain</div>
+          <h3 class="news-title">How To Mitigate Your Supply Chain Risks</h3>
+          <p class="news-excerpt">Risks are an ever-present factor in the supply chain business. There could be a lot of issues ranging from natural disasters to geopolitical tensions affecting global trade.</p>
+          <a href="https://fabulousfreight.in/how-to-mitigate-your-supply-chain-risks/" class="news-read" id="news-2-link" target="_blank" rel="noopener noreferrer">Read Article →</a>
+        </div>
+      </article>
+
+      <div class="news-cta-card">
+        <div class="news-cta-label">Stay Informed</div>
+        <h3>We're Ready to<br /><em>Move Your World</em></h3>
+        <p>We guarantee safe delivery of your package with best chain supply logistics services.</p>
+        <a href="#contact" class="btn-primary" id="news-cta-btn">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     QUOTE FORM
+============================= -->
+<section id="contact" class="quote-section" aria-label="Request a Quote">
+  <div class="quote-inner">
+    <div class="quote-left">
+      <div class="section-label reveal-fade">Get Started</div>
+      <h2 class="quote-headline reveal-up">
+        Request<br />
+        <em>A Quote</em>
+      </h2>
+      <p class="quote-subline reveal-fade">
+        Ready to move your cargo? Fill out the form and our team of specialists will reach out to provide a tailored solution.
+      </p>
+
+      <div class="contact-details reveal-fade">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-text">
+            <strong>New Delhi, India</strong>
+            <span>Head Office</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-text">
+            <strong>+91 97112 34596</strong>
+            <span>WhatsApp Available</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-text">
+            <strong>info@fabulousfreight.in</strong>
+            <span>24/7 Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-right">
+      <form class="quote-form" id="quote-form" novalidate aria-label="Quote request form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="q-name" class="form-label">Your Name</label>
+            <input type="text" id="q-name" name="name" class="form-input" placeholder="John Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="q-company" class="form-label">Company</label>
+            <input type="text" id="q-company" name="company" class="form-input" placeholder="Your Company Ltd." autocomplete="organization" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="q-email" class="form-label">Email Address</label>
+            <input type="email" id="q-email" name="email" class="form-input" placeholder="john@company.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="q-phone" class="form-label">Phone Number</label>
+            <input type="tel" id="q-phone" name="phone" class="form-input" placeholder="+91 98765 43210" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="q-service" class="form-label">Service Required</label>
+          <select id="q-service" name="service" class="form-input form-select" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="air">Air Freight</option>
+            <option value="ocean">Ocean Freight</option>
+            <option value="road">Road Transportation</option>
+            <option value="warehouse" style="display:none"></option>
+            <option value="customs">Customs Clearance</option>
+            <option value="breakbulk">Break Bulk Shipments</option>
+            <option value="multimodal">Multimodal Solution</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q-origin" class="form-label">Origin</label>
+          <input type="text" id="q-origin" name="origin" class="form-input" placeholder="City, Country" />
+        </div>
+        <div class="form-group">
+          <label for="q-destination" class="form-label">Destination</label>
+          <input type="text" id="q-destination" name="destination" class="form-input" placeholder="City, Country" />
+        </div>
+        <div class="form-group">
+          <label for="q-message" class="form-label">Additional Details</label>
+          <textarea id="q-message" name="message" class="form-input form-textarea" placeholder="Describe your shipment, cargo weight, dimensions, timeline..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-submit" id="submit-quote">
+          <span class="btn-text">Send Enquiry</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <div class="form-success" id="form-success" aria-live="polite">
+          ✓ Thank you! We'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================
+     FOOTER
+============================= -->
+<footer class="footer" id="footer" aria-label="Site footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Fabulous Freight India Pvt. Ltd." class="footer-logo" />
+      <p class="footer-tagline">A Leading Enabler of Global Trade</p>
+      <div class="footer-social">
+        <a href="https://web.whatsapp.com/send?phone=919711234596&text=Hello,%20I%20Want%20Quotation" class="social-link" id="footer-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4 class="footer-col-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services" id="foot-air">Air Freight</a></li>
+          <li><a href="#services" id="foot-ocean">Ocean Freight</a></li>
+          <li><a href="#services" id="foot-road">Road Transportation</a></li>
+          <li><a href="#services" id="foot-customs">Customs Clearance</a></li>
+          <li><a href="#services" id="foot-breakbulk">Break Bulk Shipments</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#home" id="foot-home">Home</a></li>
+          <li><a href="#about" id="foot-about">About Us</a></li>
+          <li><a href="#gallery" id="foot-gallery">Gallery</a></li>
+          <li><a href="#news" id="foot-news">News</a></li>
+          <li><a href="#contact" id="foot-contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact</h4>
+        <address class="footer-address">
+          <p>New Delhi, India</p>
+          <p><a href="tel:+919711234596" id="foot-phone">+91 97112 34596</a></p>
+          <p><a href="mailto:info@fabulousfreight.in" id="foot-email">info@fabulousfreight.in</a></p>
+          <p><a href="https://fabulousfreight.in" id="foot-website" target="_blank" rel="noopener noreferrer">fabulousfreight.in</a></p>
+        </address>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      © 2024 Fabulous Freight India Pvt. Ltd. All rights reserved.
+    </div>
+    <div class="footer-credits">
+      Incorporated 2014 · CIN U63090DL2014PTC271551
+    </div>
+  </div>
+
+  <!-- Large footer typography -->
+  <div class="footer-big-text" aria-hidden="true">FABULOUS</div>
+</footer>
+
+<!-- Cobe Globe (ESM module) -->
+<script type="module">
+  import createGlobe from 'https://esm.sh/cobe@0.6.3';
+  window.__cobeLoaded = true;
+  window.__createGlobe = createGlobe;
+  document.dispatchEvent(new Event('cobe-ready'));
+</script>
+<script src="script.js"></script>
+</body>
+</html>
